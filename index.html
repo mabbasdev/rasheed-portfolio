@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Rasheed — Senior Full Stack Developer • Portfolio</title>
+  <meta name="description"
+    content="Personal portfolio — Senior iOS Engineer. Case studies, skills, resume, and contact." />
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- Header / Nav -->
+  <header role="banner" aria-label="Primary">
+    <div class="nav-inner" role="navigation" aria-label="Main navigation">
+      <div class="brand" aria-hidden="true">
+        <span class="dot"></span>Rasheed
+      </div>
+
+      <button class="mobile-toggle" id="mobileToggle" aria-expanded="false" aria-controls="mobileMenu"
+        aria-label="Open menu">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <path d="M4 6h16M4 12h16M4 18h16" stroke="#111" stroke-width="1.6" stroke-linecap="round" />
+        </svg>
+      </button>
+
+      <nav id="mainNav" role="navigation" aria-label="Primary navigation">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#resume">Resume</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+
+    <!-- Mobile menu (hidden on desktop) -->
+    <div id="mobileMenu" style="
+          display: none;
+          padding: 12px 20px;
+          border-top: 1px solid rgba(17, 24, 39, 0.04);
+          background: rgba(255, 255, 255, 0.96);
+        ">
+      <div style="display: flex; flex-direction: column; gap: 8px">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#resume">Resume</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main" class="site" tabindex="-1">
+    <!-- HERO -->
+    <section id="home" class="hero" aria-label="Introduction">
+      <div class="hero-left">
+        <div class="eyebrow">👋 Hey there</div>
+        <div class="name">
+          <span>Rasheed here!</span>
+          <span class="wave" aria-hidden="true">👋</span>
+        </div>
+        <div class="title">Senior Full Stack Developer</div>
+        <p class="lead">
+          I build delightful, high-performance multi-platform apps with a focus on great
+          UX, robust architecture, and fast delivery. Over 8+ years across
+          product companies and startups.
+        </p>
+
+        <div class="cta-row">
+          <button class="btn-primary" id="contactPrimary">Contact Me</button>
+          <a class="muted" href="#portfolio" aria-label="See my work" style="padding: 8px 6px; font-weight: 700">View
+            portfolio →</a>
+        </div>
+
+        <div style="
+              display: flex;
+              gap: 12px;
+              margin-top: 18px;
+              align-items: center;
+            ">
+          <div class="social-stack" aria-hidden="true">
+            <a class="social-btn" href="#" title="LinkedIn" aria-label="LinkedIn link">
+              <svg width="40" height="40" viewBox="0 0 24 24" fill="none">
+                <path
+                  d="M19 3A2 2 0 0 1 21 5V19A2 2 0 0 1 19 21H5A2 2 0 0 1 3 19V5A2 2 0 0 1 5 3H19M8.34 17V10.67H5.67V17H8.34M7 9.55A1.44 1.44 0 0 0 8.44 8.11C8.44 7.31 7.78 6.67 7 6.67C6.22 6.67 5.56 7.31 5.56 8.11C5.56 8.91 6.22 9.55 7 9.55M18.33 17V13.3C18.33 11.4 17.44 10.5 15.78 10.5C14.67 10.5 14 11.17 13.75 11.67H13.7V10.67H11.11V17H13.78V13.61C13.78 12.72 14.05 12.11 14.95 12.11C15.84 12.11 16.11 12.83 16.11 13.61V17H18.33Z"
+                  fill="#0A66C2" />
+              </svg>
+            </a>
+
+            <a class="social-btn" href="#" title="GitHub" aria-label="GitHub link">
+              <svg width="40" height="40" viewBox="0 0 24 24" fill="none">
+                <path
+                  d="M12 2C6.48 2 2 6.48 2 12c0 4.42 2.87 8.17 6.84 9.5.5.09.68-.22.68-.48 0-.24-.01-.87-.01-1.71-2.78.6-3.37-1.34-3.37-1.34-.45-1.15-1.11-1.46-1.11-1.46-.9-.62.07-.61.07-.61 1 .07 1.53 1.03 1.53 1.03.89 1.52 2.34 1.08 2.91.83.09-.65.35-1.08.64-1.33-2.22-.25-4.56-1.11-4.56-4.93 0-1.09.39-1.98 1.03-2.68-.1-.26-.45-1.28.1-2.66 0 0 .84-.27 2.75 1.02A9.56 9.56 0 0112 6.8c.85.004 1.71.115 2.5.34 1.9-1.29 2.74-1.02 2.74-1.02.55 1.38.2 2.4.1 2.66.64.7 1.03 1.59 1.03 2.68 0 3.83-2.34 4.67-4.57 4.92.36.31.69.92.69 1.85 0 1.34-.01 2.42-.01 2.75 0 .27.18.58.69.48A10.01 10.01 0 0022 12c0-5.52-4.48-10-10-10z"
+                  fill="#111" />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-right center">
+        <img src="assets/images/profile.jpg" alt="Rasheed Portrait" loading="lazy"
+          style="scale: 0.8; border-radius: 10px;">
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" aria-label="About me">
+      <div class="section-title">
+        <h2>About Me</h2>
+        <div class="muted">I code for passion & design for fun</div>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-photo fade-up" data-delay="80">
+          <!-- placeholder portrait; replace with your real image -->
+          <img alt="Rasheed portrait" loading="lazy" src="assets/images/about-1.jpg"
+            style="width: 100%; height: auto; display: block" />
+        </div>
+
+        <div class="about-card fade-up" data-delay="160">
+          <p style="margin: 0; color: #374151">
+            I'm a product-focused Full Stack Engineer with experience building responsive websites and mobile apps for
+            Android and iOS. I specialize in modern frameworks, scalable architecture, testing, and delivering
+            high-quality features that users enjoy.
+          </p>
+
+          <div class="stats" aria-hidden="true">
+            <div class="stat">
+              <div class="num">8+</div>
+              <div class="muted">Years experience</div>
+            </div>
+            <div class="stat">
+              <div class="num">120+</div>
+              <div class="muted">Projects</div>
+            </div>
+            <div class="stat">
+              <div class="num">1.3M+</div>
+              <div class="muted">Downloads</div>
+            </div>
+          </div>
+
+          <div style="
+                margin-top: 16px;
+                display: flex;
+                gap: 12px;
+                align-items: center;
+              ">
+            <a class="btn-primary" href="#" download="Rasheed-Resume.pdf" aria-label="Download resume (PDF)">Download
+              CV</a>
+            <a class="muted" href="#contact" aria-label="See my work" style="padding: 8px 6px; font-weight: 700">See
+              Contact Info →</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- RESUME (timeline) -->
+    <section id="resume" class="section">
+      <div class="section-title">
+        <h2>Resume</h2>
+        <p class="muted" style="margin: 0;">My work experience and education history</p>
+      </div>
+      <div class="container" style="margin-top: 50px;">
+
+        <!-- Tabs -->
+        <div class="resume-tabs">
+          <button class="tab-btn btn-lg active" data-tab="work">Work</button>
+          <button class="tab-btn btn-lg" data-tab="education">Education</button>
+        </div>
+
+        <!-- Tab Content Wrapper -->
+        <div class="resume-content">
+
+          <!-- Work Timeline -->
+          <div class="tab-content active" id="work">
+            <div class="resume-item">
+              <h3>Senior iOS Engineer</h3>
+              <span class="company">Acme Corp · Jan 2021 – Present</span>
+              <span class="type">Full-time</span>
+              <p>Led mobile team to ship key features, migrated large codebase to SwiftUI components, improved CI and
+                tests.</p>
+            </div>
+
+            <div class="resume-item">
+              <h3>iOS Engineer</h3>
+              <span class="company">Widgets Inc · Jul 2017 – Dec 2020</span>
+              <span class="type">Full-time</span>
+              <p>Built consumer mobile apps, implemented analytics and A/B testing, scaled onboarding flow for high
+                traffic.</p>
+            </div>
+          </div>
+
+          <!-- Education Timeline -->
+          <div class="tab-content" id="education">
+            <div class="resume-item">
+              <h3>Bachelor of Computer Science</h3>
+              <span class="company">XYZ University · 2013 – 2017</span>
+              <span class="type">Full-time</span>
+              <p>Specialized in software engineering, mobile application development, and system design.</p>
+            </div>
+
+            <div class="resume-item">
+              <h3>High School Diploma</h3>
+              <span class="company">ABC School · 2011 – 2013</span>
+              <span class="type">Full-time</span>
+              <p>Graduated with honors, majoring in science and mathematics.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- PORTFOLIO -->
+    <section id="portfolio" aria-label="Portfolio">
+      <div class="section-title">
+        <h2>Portfolio</h2>
+        <div class="muted">Most recent work</div>
+      </div>
+
+      <!-- Filter Tabs -->
+      <div class="filter-tabs">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="web">Web</button>
+        <button class="filter-btn" data-filter="mobile">Mobile</button>
+      </div>
+
+      <div class="portfolio-grid" role="list">
+        <div class="project" data-category="web" role="listitem" tabindex="0"
+          data-project='{"title":"RStats - Analytics App","desc":"A realtime analytics dashboard for web.","image":"assets/images/portfolio/portfolio1.png"}'>
+          <img class="project-thumb" src="assets/images/portfolio/portfolio1.png" alt="Project RStats thumbnail"
+            loading="lazy" />
+          <div class="project-body">
+            <div class="proj-title">RStats Web</div>
+            <div class="proj-desc">A realtime analytics dashboard for web.</div>
+          </div>
+        </div>
+
+        <div class="project" data-category="mobile" role="listitem" tabindex="0"
+          data-project='{"title":"RStats - Analytics App","desc":"A realtime analytics dashboard for mobile. A realtime analytics dashboard for mobile.A realtime analytics dashboard for mobile.","image":"assets/images/portfolio/portfolio2.png"}'>
+          <img class="project-thumb" src="assets/images/portfolio/portfolio2.png" alt="Project RStats thumbnail"
+            loading="lazy" />
+          <div class="project-body">
+            <div class="proj-title">RStats Mobile</div>
+            <div class="proj-desc">A realtime analytics dashboard for mobile. A realtime analytics dashboard for
+              mobile.A realtime analytics dashboard for mobile.</div>
+          </div>
+        </div>
+
+        <div class="project" data-category="web" role="listitem" tabindex="0"
+          data-project='{"title":"Web Dashboard","desc":"A full-featured dashboard for analytics.","image":"assets/images/portfolio/portfolio3.png"}'>
+          <img class="project-thumb" src="assets/images/portfolio/portfolio3.png" alt="Web Dashboard thumbnail"
+            loading="lazy" />
+          <div class="project-body">
+            <div class="proj-title">Web Dashboard</div>
+            <div class="proj-desc">A full-featured dashboard for analytics.</div>
+          </div>
+        </div>
+
+        <div class="project" data-category="mobile" role="listitem" tabindex="0"
+          data-project='{"title":"Fitness Tracker","desc":"A sleek mobile fitness app.","image":"assets/images/portfolio/portfolio4.png"}'>
+          <img class="project-thumb" src="assets/images/portfolio/portfolio4.png" alt="Fitness Tracker thumbnail"
+            loading="lazy" />
+          <div class="project-body">
+            <div class="proj-title">Fitness Tracker</div>
+            <div class="proj-desc">A sleek mobile fitness app.</div>
+          </div>
+        </div>
+
+        <div class="project" data-category="web" role="listitem" tabindex="0"
+          data-project='{"title":"CRM Platform","desc":"Customer relationship management for enterprises.","image":"assets/images/portfolio/portfolio5.png"}'>
+          <img class="project-thumb" src="assets/images/portfolio/portfolio5.png" alt="CRM Platform thumbnail"
+            loading="lazy" />
+          <div class="project-body">
+            <div class="proj-title">CRM Platform</div>
+            <div class="proj-desc">Customer relationship management for enterprises.</div>
+          </div>
+        </div>
+
+        <div class="project" data-category="mobile" role="listitem" tabindex="0"
+          data-project='{"title":"Chat App","desc":"Realtime chat application.","image":"assets/images/portfolio/portfolio6.png"}'>
+          <img class="project-thumb" src="assets/images/portfolio/portfolio6.png" alt="Chat App thumbnail"
+            loading="lazy" />
+          <div class="project-body">
+            <div class="proj-title">Chat App</div>
+            <div class="proj-desc">Realtime chat application.</div>
+          </div>
+        </div>
+
+        <div class="project" data-category="web" role="listitem" tabindex="0"
+          data-project='{"title":"Analytics UI","desc":"Frontend UI for analytics platform.","image":"assets/images/portfolio/portfolio7.png"}'>
+          <img class="project-thumb" src="assets/images/portfolio/portfolio7.png" alt="Analytics UI thumbnail"
+            loading="lazy" />
+          <div class="project-body">
+            <div class="proj-title">Analytics UI</div>
+            <div class="proj-desc">Frontend UI for analytics platform.</div>
+          </div>
+        </div>
+
+        <div class="project" data-category="mobile" role="listitem" tabindex="0"
+          data-project='{"title":"Finance App","desc":"Mobile banking and finance app.","image":"assets/images/portfolio/portfolio8.png"}'>
+          <img class="project-thumb" src="assets/images/portfolio/portfolio8.png" alt="Finance App thumbnail"
+            loading="lazy" />
+          <div class="project-body">
+            <div class="proj-title">Finance App</div>
+            <div class="proj-desc">Mobile banking and finance app.</div>
+          </div>
+        </div>
+
+        <div class="project" data-category="web" role="listitem" tabindex="0"
+          data-project='{"title":"E-Commerce UI","desc":"Modern e-commerce web frontend.","image":"assets/images/portfolio/portfolio9.png"}'>
+          <img class="project-thumb" src="assets/images/portfolio/portfolio9.png" alt="E-Commerce UI thumbnail"
+            loading="lazy" />
+          <div class="project-body">
+            <div class="proj-title">E-Commerce UI</div>
+            <div class="proj-desc">Modern e-commerce web frontend.</div>
+          </div>
+        </div>
+
+        <div class="project" data-category="mobile" role="listitem" tabindex="0"
+          data-project='{"title":"Travel App","desc":"Mobile travel planner app.","image":"assets/images/portfolio/portfolio10.png"}'>
+          <img class="project-thumb" src="assets/images/portfolio/portfolio10.png" alt="Travel App thumbnail"
+            loading="lazy" />
+          <div class="project-body">
+            <div class="proj-title">Travel App</div>
+            <div class="proj-desc">Mobile travel planner app.</div>
+          </div>
+        </div>
+
+        <div class="project" data-category="web" role="listitem" tabindex="0"
+          data-project='{"title":"Landing Page","desc":"Web landing page design.","image":"assets/images/portfolio/portfolio11.png"}'>
+          <img class="project-thumb" src="assets/images/portfolio/portfolio11.png" alt="Landing Page thumbnail"
+            loading="lazy" />
+          <div class="project-body">
+            <div class="proj-title">Landing Page</div>
+            <div class="proj-desc">Web landing page design.</div>
+          </div>
+        </div>
+
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" aria-label="Skills">
+      <div class="section-title">
+        <h2>Skills</h2>
+        <div class="muted">An overview of my tech and expertise</div>
+      </div>
+
+      <div class="skills-wrap fade-up in">
+        <!-- popular skills as pills -->
+        <div class="skill-pill">Kotlin</div>
+        <div class="skill-pill">Java</div>
+        <div class="skill-pill">Android Studio</div>
+        <div class="skill-pill">Jetpack Compose</div>
+        <div class="skill-pill">Material Design</div>
+        <div class="skill-pill">MVVM Architecture</div>
+        <div class="skill-pill">Room Database</div>
+        <div class="skill-pill">Retrofit</div>
+        <div class="skill-pill">Coroutines</div>
+        <div class="skill-pill">Firebase</div>
+        <div class="skill-pill">REST APIs</div>
+        <div class="skill-pill">Dependency Injection (Hilt/Dagger)</div>
+        <div class="skill-pill">Play Store Deployment</div>
+        <div class="skill-pill">Git & GitHub</div>
+        <div class="skill-pill">Unit & UI Testing</div>
+
+        <div class="skill-pill">WordPress</div>
+        <div class="skill-pill">Elementor</div>
+        <div class="skill-pill">WooCommerce</div>
+        <div class="skill-pill">Blogging</div>
+        <div class="skill-pill">PHP</div>
+        <div class="skill-pill">MySQL</div>
+        <div class="skill-pill">JavaScript</div>
+        <div class="skill-pill">HTML5</div>
+        <div class="skill-pill">CSS3</div>
+        <div class="skill-pill">Theme Customization</div>
+        <div class="skill-pill">Custom Post Types</div>
+        <div class="skill-pill">SEO Optimization</div>
+        <div class="skill-pill">Responsive Design</div>
+        <div class="skill-pill">Website Migration</div>
+        <div class="skill-pill">Performance Optimization</div>
+        <div class="skill-pill">cPanel & Hosting</div>
+        <div class="skill-pill">Security Hardening</div>
+
+      </div>
+    </section>
+
+    <!-- CONTACT CTA -->
+    <section id="contact" aria-label="Contact">
+      <div class="contact-cta" role="region" aria-label="Contact call to action">
+        <div class="cta-text">
+          <div style="font-weight: 800; font-size: 18px">
+            Let's get in touch.
+          </div>
+          <div class="muted" style="margin-top: 6px; color: #fff;">
+            Contact me now and let's start work on your project.
+          </div>
+          <div style="margin-top: 12px">
+            <a href="mailto:hello@Rasheed.dev" class="btn-primary"
+              style="display: inline-block; background: linear-gradient(90deg, #ffb74c, #ff5c5c);">Contact Me</a>
+            <a href="#" class="muted" style="margin-left: 12px; color: #fff; font-weight: 700;">Or Download CV</a>
+          </div>
+        </div>
+        <div aria-hidden="true" style="display: flex; align-items: center; gap: 8px">
+          <div style="
+                width: 84px;
+                height: 84px;
+                border-radius: 12px;
+                background: #fff;
+                color: var(--accent);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                box-shadow: 0 10px 30px rgba(16, 24, 40, 0.06);
+                font-weight: 800; font-size: 42px;
+              ">
+            <span class="wave">👋</span>
+          </div>
+          <style>
+
+          </style>
+        </div>
+      </div>
+
+      <div style="
+            margin-top: 18px;
+            display: grid;
+            grid-template-columns: 1fr 360px;
+            gap: 18px;
+          ">
+        <div style="
+              padding: 18px;
+              border-radius: 12px;
+              background: white;
+              border: 1px solid rgba(17, 24, 39, 0.04);
+              box-shadow: var(--shadow);
+            ">
+          <h3 style="margin: 0 0 8px 0">Send a message</h3>
+          <form id="contactForm" action="#" method="POST" onsubmit="return submitContact(event)" novalidate>
+            <div style="display: flex; gap: 8px; margin-bottom: 8px">
+              <input class="focus-ring" id="name" name="name" placeholder="Your name" required style="
+                    flex: 1;
+                    padding: 10px;
+                    border-radius: 8px;
+                    border: 1px solid rgb(17 24 39 / 16%);
+                  " />
+            </div>
+            <div style="display: flex; gap: 8px; margin-bottom: 8px">
+              <input class="focus-ring" id="email" name="email" placeholder="Email address" type="email" required style="
+                    flex: 1;
+                    padding: 10px;
+                    border-radius: 8px;
+                    border: 1px solid rgb(17 24 39 / 16%);
+                  " />
+            </div>
+            <div style="margin-bottom: 8px">
+              <textarea id="message" name="message" required class="focus-ring" placeholder="Your message" rows="5"
+                style="
+                    width: 100%;
+                    padding: 10px;
+                    border-radius: 8px;
+                    border: 1px solid rgb(17 24 39 / 16%);
+resize: vertical;
+                  "></textarea>
+            </div>
+            <div style="display: flex; gap: 8px; align-items: center">
+              <button type="submit" class="btn-primary">Send message</button>
+              <div id="formStatus" class="muted" role="status" aria-live="polite"></div>
+            </div>
+          </form>
+        </div>
+
+        <aside style="
+              padding: 18px;
+              border-radius: 12px;
+              background: #fff;
+              border: 1px solid rgba(17, 24, 39, 0.04);
+              box-shadow: var(--shadow);
+            " aria-label="Contact information">
+          <div style="font-weight: 800">Contact info</div>
+          <div class="muted" style="margin-top: 8px">hello@Rasheed.dev</div>
+          <div class="muted" style="margin-top: 8px">Islamabad, Pakistan</div>
+          <div style="margin-top: 12px">
+            <div style="font-weight: 700">Available for:</div>
+            <div class="muted" style="margin-top: 6px">
+              Freelance, Remote roles, Contract
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <footer>
+      <div style="
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 12px;
+            flex-wrap: wrap;
+          ">
+        <div style="display: flex; gap: 8px; align-items: center">
+          <div class="dot" style="width: 10px; height: 10px"></div>
+          <div style="font-weight: 800">Rasheed</div>
+          <div class="muted" style="margin-left: 6px">
+            Senior iOS Engineer
+          </div>
+        </div>
+
+        <div class="muted">
+          © <span id="year"></span> Rasheed. All rights reserved.
+        </div>
+      </div>
+    </footer>
+  </main>
+
+  <!-- Project modal (lightbox) -->
+  <!-- Project Modal -->
+  <div id="projectModal" role="dialog" aria-modal="true" aria-hidden="true">
+    <div id="projectModalContent">
+      <div class="modal-header">
+        <div id="projectModalTitle"></div>
+        <button id="closeModal" aria-label="Close project">&times;</button>
+      </div>
+
+      <div class="modal-body">
+        <img id="projectModalImg" src="" alt="" />
+        <div class="modal-details">
+          <div id="projectModalDesc"></div>
+          <div class="modal-links">
+            <a id="viewCaseStudy" href="#" target="_blank">View Case Study</a>
+            <a id="viewSource" href="#" target="_blank">View Source</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
