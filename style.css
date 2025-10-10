@@ -618,8 +618,13 @@ footer {
 }
 
 @media (max-width:1000px) {
+
     .hero {
         grid-template-columns: 1fr 340px
+    }
+
+    .name {
+        font-size: 30px;
     }
 
     .portfolio-grid {
@@ -627,7 +632,55 @@ footer {
     }
 }
 
-@media (max-width:760px) {
+@media (max-width:990px) {
+    /* .lead {
+        font-size: 14px;
+        } */
+}
+
+.stats-mobile {
+    display: none;
+}
+
+@media (max-width:930px) {
+    .stats {
+        display: none;
+    }
+
+    .stats-mobile {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-top: 50px;
+    }
+
+    .stats-mobile .num {
+        font-size: 32px;
+    }
+}
+
+.about-section-btn {
+    margin-top: 16px;
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+
+@media (max-width:840px) {
+    .about-section-btn {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 30px;
+        gap: 12px;
+    }
+
+}
+
+
+@media (max-width:762px) {}
+
+@media (max-width:768px) {
     .nav-inner {
         padding: 12px
     }
