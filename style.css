@@ -668,8 +668,8 @@ footer {
     background: #fff;
     border: 1px solid rgba(17, 24, 39, 0.04);
     box-shadow: var(--shadow);
-    display: flex;
-    justify-content: space-between;
+    /* display: flex; */
+    /* justify-content: space-between; */
 }
 
 @media (max-width:750px) {
@@ -727,6 +727,12 @@ footer {
         justify-content: center;
     }
 
+    .contact-info {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
 }
 
 @media (max-width:768px) {
@@ -759,8 +765,6 @@ footer {
     .about-grid {
         gap: 18px
     }
-
-    .portfolio-grid {}
 
     .avatar-wrap {
         width: 200px;
@@ -914,6 +918,16 @@ footer {
     .getintouch {
         text-align: center;
     }
+
+    .contact-info {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contact-info-title {
+        text-align: center;
+    }
+
 }
 
 /* small animations */
