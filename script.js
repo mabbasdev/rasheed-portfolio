@@ -1,6 +1,5 @@
-// -------------------------
 // Simple JS for interactions
-// -------------------------
+
 (function () {
   // Mobile menu toggle
   const toggle = document.getElementById("mobileToggle");
@@ -69,7 +68,7 @@
     // Simple mailto fallback (for demo). Replace with Formspree / API in production
     const subject = encodeURIComponent("Portfolio contact from " + name);
     const body = encodeURIComponent(message + "\n\n— " + name + "\n" + email);
-    window.location.href = `mailto:hello@rayan.dev?subject=${subject}&body=${body}`;
+    window.location.href = `mailto:captainpricecoder@gmail.com?subject=${subject}&body=${body}`;
     status.textContent = "Opening email client...";
     return false;
   };
